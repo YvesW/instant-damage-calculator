@@ -102,7 +102,7 @@ public class InstantDamageCalculatorPlugin extends Plugin
 			put(NPCWithXpBoost.SNAKELING, 1.025).
 			put(NPCWithXpBoost.PHANTOM_MUSPAH, 2.075).
 			put(NPCWithXpBoost.CORPOREAL_BEAST, 1.55).
-			put(NPCWithXpBoost.NEX, 2.525).
+			put(NPCWithXpBoost.NEX, 2.0).
 			put(NPCWithXpBoost.UMBRA, 1.075).
 			put(NPCWithXpBoost.CRUOR, 1.05).
 			put(NPCWithXpBoost.GLACIES, 1.05).
@@ -112,7 +112,7 @@ public class InstantDamageCalculatorPlugin extends Plugin
 			put(NPCWithXpBoost.BANDIT_130, 1.025).
 			put(NPCWithXpBoost.BLACK_DRAGON, 1.05).
 			put(NPCWithXpBoost.BRUTAL_BLACK_DRAGON, 1.1).
-			put(NPCWithXpBoost.DARK_WARRIOR_135,1.1).
+			put(NPCWithXpBoost.DARK_WARRIOR_145,1.1).
 			put(NPCWithXpBoost.ENT_WILDERNESS,1.025).
 			put(NPCWithXpBoost.ENT_WC_GUILD,1.05).
 			put(NPCWithXpBoost.FIRE_GIANT_104_109,1.025).
@@ -163,7 +163,7 @@ public class InstantDamageCalculatorPlugin extends Plugin
 			put(NPCWithXpBoost.BASILISK_SENTINEL, 1.075).
 			put(NPCWithXpBoost.KING_KURASK, 1.025).
 			put(NPCWithXpBoost.MARBLE_GARGOYLE, 1.025).
-			put(NPCWithXpBoost.NECHRYACH, 1.025).
+			put(NPCWithXpBoost.NECHRYARCH, 1.025).
 			put(NPCWithXpBoost.GREATER_ABYSSAL_DEMON, 1.05).
 			put(NPCWithXpBoost.NIGHT_BEAST, 1.175).
 			put(NPCWithXpBoost.CORRUPT_LIZARDMAN_NMZ, 1.025).
@@ -237,7 +237,7 @@ public class InstantDamageCalculatorPlugin extends Plugin
 	private static final ImmutableMap<NPCWithXpBoost, Double[]> XP_MODIFIERS_WITH_MODES = ImmutableMap.<NPCWithXpBoost, Double[]>builder().
 		put(NPCWithXpBoost.TEKTON, new Double[] {1.35, 1.5}).
 		put(NPCWithXpBoost.TEKTON_ENRAGED, new Double[] {1.525, 1.775}).
-		put(NPCWithXpBoost.ICE_DEMON, new Double[] {1.525, 1.775}).
+		put(NPCWithXpBoost.ICE_DEMON, new Double[] {1.025, 1.025}).
 		put(NPCWithXpBoost.LIZARDMAN_SHAMAN, new Double[] {1.175, 1.275}).
 		put(NPCWithXpBoost.VANGUARD_MELEE, new Double[] {1.075, 1.125}).
 		put(NPCWithXpBoost.VANGUARD_RANGED, new Double[] {1.05, 1.075}).
@@ -246,14 +246,14 @@ public class InstantDamageCalculatorPlugin extends Plugin
 		put(NPCWithXpBoost.VASA_NISTIRIO, new Double[] {1.075, 1.1}).
 		put(NPCWithXpBoost.VASA_CRYSTALS, new Double[] {1.025, 1.025}).
 		put(NPCWithXpBoost.SKELETAL_MYSTIC, new Double[] {1.2, 1.3}).
-		put(NPCWithXpBoost.MUTTADILE_SMALL, new Double[] {1.125, 1.225}).
-		put(NPCWithXpBoost.MUTTADILE_LARGE, new Double[] {1.2, 1.35}).
-		put(NPCWithXpBoost.PESTILENT_BLOAT, new Double[] {1.85, 1.975, 1.075}).
-		put(NPCWithXpBoost.NYLOCAS_VASILIAS, new Double[] {1.225, 1.225, 1.025}).
-		put(NPCWithXpBoost.SOTETSEG, new Double[] {1.675, 1.675, 1.045}).
-		put(NPCWithXpBoost.VERZIK_VITUR_P1, new Double[] {1.05, 1.05, 1.005}).
-		put(NPCWithXpBoost.VERZIK_VITUR_P2, new Double[] {1.425, 1.425, 1.025}).
-		put(NPCWithXpBoost.VERZIK_VITUR_P3, new Double[] {1.85, 1.85, 1.125}).
+		put(NPCWithXpBoost.MUTTADILE_SMALL, new Double[] {1.125, 1.2}).
+		put(NPCWithXpBoost.MUTTADILE_LARGE, new Double[] {1.225, 1.35}).
+		put(NPCWithXpBoost.PESTILENT_BLOAT, new Double[] {1.85, 1.85, 1.225}).
+		put(NPCWithXpBoost.NYLOCAS_VASILIAS, new Double[] {1.2, 1.2, 1.075}).
+		put(NPCWithXpBoost.SOTETSEG, new Double[] {1.375, 1.4, 1.15}).
+		put(NPCWithXpBoost.VERZIK_VITUR_P1, new Double[] {1.05, 1.05, 1.0}).
+		put(NPCWithXpBoost.VERZIK_VITUR_P2, new Double[] {1.3, 1.3, 1.075}).
+		put(NPCWithXpBoost.VERZIK_VITUR_P3, new Double[] {1.575, 1.575, 1.3}).
 		build();
 
 	// TOA XP multipliers are derived from an NPC's stats; to calculate these for a particular raid level, the base
